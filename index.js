@@ -31,7 +31,7 @@ let welcome = JSON.parse(fs.readFileSync('./database/welcome.json'));
 
 function title() {
       console.clear()
-	  console.log(chalk.bold.green(figlet.textSync('Hinata Hyuga', {
+	  console.log(chalk.bold.green(figlet.textSync('VENZ-BOT', {
 		font: 'Standard',
 		horizontalLayout: 'default',
 		verticalLayout: 'default',
@@ -79,7 +79,7 @@ const connectToWhatsApp = async () => {
             printQRInTerminal: true,
             logger: logg({ level: 'fatal' }),
             auth: state,
-            browser: ["Hinata Hyuga Multi Device", "Safari", "3.0"]
+            browser: ["VENZ-BOT Multi Device", "Safari", "3.0"]
         })
 	title()
         store.bind(conn.ev)
